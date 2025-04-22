@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const USER = 'kagochandesu' // 
-const PASS = 'n2eyedesu' // 
+const USER = process.env.BASIC_AUTH_USER
+const PASS = process.env.BASIC_AUTH_PASS
 
 export function middleware(request: NextRequest) {
   const authHeader = request.headers.get('authorization')
