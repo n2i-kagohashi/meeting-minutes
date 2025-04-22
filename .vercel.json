@@ -1,0 +1,16 @@
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "headers": {
+          "www-authenticate": "Basic realm=\"Secure Area\""
+        },
+        "continue": true
+      },
+      {
+        "src": "/(.*)",
+        "middlewarePath": "middleware"
+      }
+    ]
+  }
+  
