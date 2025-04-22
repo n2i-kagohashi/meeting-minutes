@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const USER = 'your_username' //123
-const PASS = 'your_password' //123
+const USER = 'your_username' // 12345
+const PASS = 'your_password' // 12345
 
 export function middleware(request: NextRequest) {
   const authHeader = request.headers.get('authorization')
